@@ -1,16 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee&family=Lato&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
 }
-nav a{
-    text-align: center;
-    color: #FFB26B;
-    text-decoration: none;
-}
-#hero-msg h1, #hero-msg h4{
+#hero h1, h4{
     text-align: center;
 }
-#hero-img{
+#hero img{
     width: 100%;
 }
 .button-box{
@@ -19,24 +16,44 @@ nav a{
 main section{
     text-align: center;
 }
+main section img{
+    box-sizing: border-box;
+}
 #background{
     height: 725px;
 }
-
-body {
-    background-color: #1E1B1D; 
+#logo_link{
+    padding-top: 5px;
 }
-header {
-    background-color:#555354;
+nav a{
+    text-align: center;
+    color: #FFB26B;
+    text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #396E94;
     color: white;
 }
+body {
+    background-color: #1E1B1D; 
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:#555354;
+    font-family: "Mukta Mahee";
+}
 .book, .join {
     background-color: #5C9EAD;
     color: #FFB26B;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #396E94;
@@ -44,15 +61,22 @@ nav a:hover {
 }
 .msg{
     background-color: #5C9EAD;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2{
     color: #FFB26B;
+    font-family: "Mukta Mahee";
 }
 .msg p{
     color: white;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 footer{
     background-color: #5C9EAD;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer h3{
     color: #FFB26B;
@@ -64,18 +88,35 @@ footer a{
 footer a:hover{
     color: white;
 }
+footer .social img{
+    padding-top: 15px;
+}
 .home-title{
     color: white;
+    font-family: "Mukta Mahee";
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4{
     color: #FFB26B;
 }
 h2{
     color:#FFB26B;
+    margin: 0;
 }
-.icon, .logo{
+.icon{
+    width: 80px;
+    padding-top: 10px;
+}
+.logo{
     width: 80px;
 }
 footer h3 a:hover{
     text-decoration: underline;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid black;
 }
