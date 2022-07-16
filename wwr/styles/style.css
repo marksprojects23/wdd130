@@ -41,6 +41,12 @@ main section{
 main section img{
     box-sizing: border-box;
 }
+main div{
+    text-align: center;
+}
+main div img{
+    box-sizing: border-box;
+}
 #background{
     height: 725px;
     grid-column: 1/11;
