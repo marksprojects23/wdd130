@@ -233,37 +233,117 @@ grid-area: b;
 
 .whalegrid{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
+    grid-template-rows: 400px 400px 0.5fr 0.8fr 0.9fr 1fr;
     grid-template-areas: "q a b b b b c r"
                         "q a b b b b c r"
                         "q d d d d d d r"
                         "q e e e f g h r"
-                        "q i k k l l l r"
+                        "q i j k l l l r"
                         "q m m m n o p r";
     background-color: #56eacf;
 }
 #whaleconservationbanner-img{
-width: 100%;
 grid-area: b;
+height:100%;
+width:100%;
 }
 #whaleconservationbanner-msg{
 grid-area: d;
+color:#0d070a;
+font-family: "Mukta Mahee", Helvetica, sans-serif;
+border-bottom: 5px solid #0d070a
 }
-#whaleconservation1{
+ #whaleconservation1{
     grid-area: e;
     width:100%;
-}
-#whaleconversation1-img{
+    display: grid;
+} 
+#whaleconservation1-img{
     width: 100%;
 }
-#whaleconservation2-img{
+.buttonbox {
+  border-radius: 4px;
+  background-color: #337cfc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonbox span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonbox span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonbox:hover span {
+  padding-right: 25px;
+}
+
+.buttonbox:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.share {
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  padding: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.button-box1
+{
+  grid-column: g;
+  display:flex;
+  height:100px;
+  padding-top: 45px;
+}
+.button-box2{
+  grid-column: j;
+  display:flex;
+  height:100px;
+  padding-top: 70px;
+}
+.button-box3{
+  grid-column: o;
+  display:flex;
+  height:100px;
+  padding-top: 80px;
+}
+
+#whaleconservation2{
     grid-area:l;
     width:100%;
 }
-#whaleconservation3-img{
-    grid-area:m;
+#whaleconservation2-img{
+  width:100%;
+}
+#whaleconservation3{
+grid-area:m;
     width:100%;
+}
+#whaleconservation3-img{
+  width:100%;
 }
 
 footer{
