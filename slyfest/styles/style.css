@@ -38,7 +38,7 @@ nav a:hover {
 .homegrid{
     display: grid;
     grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
-    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr 0.8fr;
     grid-template-areas: "a b b e"
                         "f b b g"
                         "i c j l"
