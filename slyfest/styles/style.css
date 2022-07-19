@@ -5,6 +5,7 @@ header {
     font-family: "Mukta Mahee", Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 150px auto;
+    font-size: 1.5em;
 }
 body {
   margin: 0;
@@ -233,6 +234,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     font-family: "Mukta Mahee", Helvetica, sans-serif;
+    font-size: 1.5em;
 }
 footer h3{
     color: #337cfc;
