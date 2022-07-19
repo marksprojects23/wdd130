@@ -226,6 +226,46 @@ grid-area: b;
     grid-area: k;
     z-index: 1;
 }
+#submit:hover{
+    background-color: #0d070a;
+    color: white;
+}
+
+.whalegrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "q a b b b b c r"
+                        "q a b b b b c r"
+                        "q d d d d d d r"
+                        "q e e e f g h r"
+                        "q i k k l l l r"
+                        "q m m m n o p r";
+    background-color: #56eacf;
+}
+#whaleconservationbanner-img{
+width: 100%;
+grid-area: b;
+}
+#whaleconservationbanner-msg{
+grid-area: d;
+}
+#whaleconservation1{
+    grid-area: e;
+    width:100%;
+}
+#whaleconversation1-img{
+    width: 100%;
+}
+#whaleconservation2-img{
+    grid-area:l;
+    width:100%;
+}
+#whaleconservation3-img{
+    grid-area:m;
+    width:100%;
+}
+
 footer{
     background-color: #0d070a;
     padding: 25px 50px;
