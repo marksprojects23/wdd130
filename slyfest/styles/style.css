@@ -114,7 +114,7 @@ grid-area: b;
 
   #gallerygrid{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
     grid-template-rows: 0.4fr 1fr 1fr 0.1fr;
     grid-template-areas: "a b b c"
                         "d e e f"
