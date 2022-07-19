@@ -172,6 +172,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: "Mukta Mahee", Helvetica, sans-serif;
 }
 footer h3{
     color: #337cfc;
