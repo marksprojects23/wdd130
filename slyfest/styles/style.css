@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee&family=Lato&display=swap');
+
 header {
-    background-color:#3a3839;
+    background-color:#0d070a;
     font-family: "Mukta Mahee", Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 150px auto;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    z-index:0;
+    grid-column: 1/5;
+    grid-row: 1/6;
 }
 .logo{
     width: 80px;
@@ -18,47 +27,106 @@ nav{
 }
 nav a{
     text-align: center;
-    color: #FFB26B;
+    color: #337cfc;
     text-decoration: none;
     padding: 35px;
 }
 nav a:hover {
-    background-color: #396E94;
+    background-color: #56eacf;
     color: white;
 }
 .homegrid{
     display: grid;
     grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
     grid-template-areas: "a b b e"
                         "f b b g"
-                        "i c c l"
-                        "m c c p"
+                        "i c j l"
+                        "m c j p"
                         "q d d t";
     /* margin: 0 auto; */
     /* width: 100%;
     height: 100%; */
-    background-image: "images/surfboards.jpg";
+    background-image: url('/images/surfboards.jpg');
     background-color: #cccccc;
 }
 #homebanner{
 grid-area: b;
     z-index: 1;
+    background-color: white;
+    position:relative;
+    
 }
 #homebanner-img{
     width: 100%;
 }
+#homebanner-msg{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    padding: 150px 0;
+    color:white;
+}
 .upcomingevent{
-    grid-area: c;
+    grid-column: c/j;
+    grid-row: c/j;
     z-index: 1;
+    background-color: black;
+    display:flex;
+}
+.upcomingeventtext{
+    color: white;
+    font-size: 20px;
+    font-family: "Lato", Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    grid-area: j;
+    flex:1;
+    padding: 150px 0;
 }
 #upcomingeventimage{
     width: 50%;
+    flex:1;
 }
 .checkgallery{
     grid-area: d;
     z-index: 1;
+    position:relative;
 }
 #checkgalleryimage{
     width: 100%;
+}
+.block {
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    position: absolute;
+    top: 45%;
+    left: 85%;
+    transform: translate(-25%, -50%);
+  }
+  
+  .block:hover {
+    background-color: #337cfc;
+    color: white;
+  }
+footer{
+    background-color: #0d070a;
+    padding: 25px 50px;
+    /* margin-top: 200px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer h3{
+    color: #337cfc;
+}
+footer a{
+    color: #337cfc;
+    text-decoration: none;
+}
+footer a:hover{
+    color: white;
+}
+footer .social img{
+    padding-top: 15px;
 }
