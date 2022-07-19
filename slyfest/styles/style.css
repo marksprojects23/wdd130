@@ -55,6 +55,7 @@ grid-area: b;
     z-index: 1;
     background-color: white;
     position:relative;
+    font-family: "Mukta Mahee", Helvetica, sans-serif;
     
 }
 #homebanner-img{
@@ -77,7 +78,7 @@ grid-area: b;
 .upcomingeventtext{
     color: white;
     font-size: 20px;
-    font-family: "Lato", Helvetica, sans-serif;
+    font-family: "Mukta Mahee", Helvetica, sans-serif;;
     text-align: center;
     padding: 10px;
     grid-area: j;
@@ -92,6 +93,7 @@ grid-area: b;
     grid-area: d;
     z-index: 1;
     position:relative;
+    font-family: "Mukta Mahee", Helvetica, sans-serif;
 }
 #checkgalleryimage{
     width: 100%;
