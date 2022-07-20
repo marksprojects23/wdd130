@@ -25,30 +25,58 @@
         <div id="whaleconservation1">
             <img id="whaleconservation1-img" src="images/whaleconservationbanners/WDC_Press_Banner_v3.jpg" alt="Whale Conservation Organization 1">
         </div>
+            <div id="noshow">
+                <p id="website1">https://us.whales.org/</p>
+                <p id="website2">https://savethewhales.org/</p>
+                <p id="website3">https://seashepherd.org/<p>
+            </div>
         <div class="button-box1">
-            <button class="buttonbox"><span>Check out their website! </span></button>
-            <button class="share"><i class="fa fa-square-share-nodes"></i></button>
+            <button class="buttonbox" onclick="javascript:window.open('https://us.whales.org/', '_blank');"><span>Check out their website! </span></button>
+            <button class="share" onclick="myFunction('website1')"><i class="fa fa-square-share-nodes"></i></button>
         </div>
         <div id="whaleconservation2">
             <img id="whaleconservation2-img" src="images/whaleconservationbanners/savethewhales.gif" alt="Whale Conservation Organization 2">
         </div>
         <div class="button-box2">
-            <button class="buttonbox"><span>Check out their website! </span></button>
-            <button class="share"><i class="fa fa-square-share-nodes"></i></button>
+            <button class="buttonbox" onclick="javascript:window.open('https://savethewhales.org/', '_blank');"><span>Check out their website! </span></button>
+            <button class="share" onclick="myFunction('website2')"><i class="fa fa-square-share-nodes"></i></button>
         </div>
         <div id="whaleconservation3">
             <img id="whaleconservation3-img" src="images/whaleconservationbanners/seashepherd.jpg" alt="Whale Conservation Organization 3">
         </div>
         <div class="button-box3">
-            <button class="buttonbox"><span>Check out their website! </span></button>
-            <button class="share"><i class="fa fa-square-share-nodes"></i></button>
+            <button class="buttonbox" onclick="javascript:window.open('https://seashepherd.org/', '_blank');"><span>Check out their website! </span></button>
+            <button class="share" onclick="myFunction('website3')"><i class="fa fa-square-share-nodes"></i></button>
         </div>
+        <script>
+            function myFunction(a) {
+              /* Get the text field */
+              var copyText = document.getElementById(a).textContent;
+            
+              /* Copy the text inside the text field */
+              navigator.clipboard.writeText(copyText);
+              
+              /* Alert the copied text */
+              alert("Copied the text: " + copyText);
+            }
+            </script>
     </main>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#ebutton').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe" src="contactus.html" width="700" height="450"></iframe>');
+        }
+    });   
+});
+</script>
     <div class="contactus">
         <h2 id="contactfont">Contact Us!</h2>
-        <a class="contactus-link" href="mailto:">
-            <button class="share"><i class="fa fa-envelope"></i></button>
+        <!-- <a class="contactus-link" href="mailto:"> -->
+            <button class="email" id="ebutton"><i class="fa fa-envelope"></i></button>
     </div>
+    <div id="iframeHolder"></div>
     <footer>
         <h3>Sly Fest &copy; 2022 - Jace Fernandez & Mark Cuizon</h3>
         <h3><a href="site-plan.html">Site Plan</a></h3>
